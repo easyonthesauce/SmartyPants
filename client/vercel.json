@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "env": {
+    "VITE_ELEVEN_AGENT_ID": "@eleven_agent_id",
+    "VITE_PROXY_URL": "@proxy_url"
+  }
+}

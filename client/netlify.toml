@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+[build.environment]
+  VITE_ELEVEN_AGENT_ID = "replace_me"
+  VITE_PROXY_URL = "https://your-proxy.example.com"
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
